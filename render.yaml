@@ -6,10 +6,10 @@ services:
     buildCommand: |
       python -m pip install --upgrade pip
       pip install -r requirements.txt
-    startCommand: gunicorn app:app --timeout 120
+    startCommand: gunicorn app:app --workers 1 --threads 2 --timeout 120
     envVars:
       - key: PYTHON_VERSION
-        value: 3.13.2
+        value: 3.11.0
       - key: OPENROUTER_API_KEY
         sync: false
       - key: PYTHONUNBUFFERED
@@ -17,3 +17,10 @@ services:
     healthCheckPath: /
     autoDeploy: true
     plan: free
+    scaling:
+      minInstances: 1
+      maxInstances: 1
+    resources:
+      cpu: 0.1
+      memory: 512M
+      storage: 0
