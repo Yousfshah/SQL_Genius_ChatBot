@@ -18,23 +18,24 @@ A professional SQL query assistant that helps generate optimized database querie
 
 ## **Setup**
 
-1. Clone the repository:
+### 1. Clone the repository:
 ```bash
 git clone https://github.com/Yousfshah/SQL_ChatBot.git
 cd SQL_Genius_ChatBot
 ```
 
-2. Install dependencies:
+### 2. Install dependencies:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Create a .env file in the root directory:
+### 3. Create a .env file in the root directory:
+   
 - [Access openrouter API Key](https://openrouter.ai/qwen/qwen2.5-vl-72b-instruct:free/api)
-
 ```bash
 OPENROUTER_API_KEY="your_openrouter_api_key"
 ```
+- Note: Don't Use Quotes for the API Key 
 
 ## **Security Note**
 
