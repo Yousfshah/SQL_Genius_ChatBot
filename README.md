@@ -14,13 +14,12 @@ A professional SQL query assistant that helps generate optimized database querie
 - Copy-to-clipboard functionality
 - Mobile responsive design
 - Markdown-formatted explanations
-- Performance optimization notes
 
 ## **Setup**
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/Yousfshah/SQL_ChatBot.git
+git clone https://github.com/Yousfshah/SQL_Genius_ChatBot.git
 cd SQL_Genius_ChatBot
 ```
 
@@ -40,10 +39,6 @@ OPENROUTER_API_KEY="your_openrouter_api_key"
 ## **Security Note**
 
 The API key is stored in .env which is listed in .gitignore to prevent it from being tracked by Git. Make sure to never commit your API keys to version control.
-
-## **Hosting**
-
-This project is hosted on GitHub Pages. The live version can be accessed: [Here](https://yousfshah.github.io/SQL_ChatBot/)
 
 ## **Feel Free to Reach out**
 
