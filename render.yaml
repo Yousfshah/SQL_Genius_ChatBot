@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: sql-genius-chatbot
+    env: python
+    region: oregon
+    buildCommand: |
+      python -m pip install --upgrade pip
+      pip install -r requirements.txt
+    startCommand: gunicorn app:app --timeout 120
+    envVars:
+      - key: PYTHON_VERSION
+        value: 3.13.2
+      - key: OPENROUTER_API_KEY
+        sync: false
+      - key: PYTHONUNBUFFERED
+        value: "true"
+    healthCheckPath: /
+    autoDeploy: true
+    plan: free
