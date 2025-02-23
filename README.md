@@ -20,11 +20,11 @@ A professional SQL query assistant that helps generate optimized database querie
 ### 1. Clone the repository:
 ```bash
 git clone https://github.com/Yousfshah/SQL_Genius_ChatBot.git
-cd SQL_Genius_ChatBot
 ```
 
 ### 2. Install dependencies:
 ```bash
+conda install --file requirements.txt
 pip install -r requirements.txt
 ```
 
@@ -34,7 +34,12 @@ pip install -r requirements.txt
 ```bash
 OPENROUTER_API_KEY="your_openrouter_api_key"
 ```
-- Note: Don't Use Quotes for the API Key 
+- Note: Don't Use Quotes for the API Key
+
+### 4. Run python file
+```bash
+python app.py
+```
 
 ## **Security Note**
 
