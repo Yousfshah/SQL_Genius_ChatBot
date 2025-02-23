@@ -24,7 +24,7 @@ git clone https://github.com/Yousfshah/SQL_Genius_ChatBot.git
 
 ### 2. Install dependencies:
 ```bash
-conda install --file requirements.txt
+conda install --file runtime.txt
 pip install -r requirements.txt
 ```
 
